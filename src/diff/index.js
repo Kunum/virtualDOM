@@ -1,5 +1,5 @@
-import renderElement from "../render-element";
-import patchProps from "./patchProps";
+import renderElement from "../render-element/index.js";
+import patchProps from "./patchProps.js";
 
 /**
  * Verifica se o objeto é um componente virtual.
@@ -55,9 +55,7 @@ function diff(oldVirtualElement, newVirtualElement, childIndex = 0){
     // O tipo do elemento foi alterado, substitui o filho do seu pai
     if (oldVirtualElement.type !== newVirtualElement.type){
         return (parent) => {
-            parent.removeChild(parent.children[childIndex]);
-            parent.appendChild(renderElement(newVirtualElement));
-
+            parent.replaceChild(renderElement(newVirtualElement), parent.childNodes[childIndex]);
             return parent;
         }
     }

@@ -1,4 +1,4 @@
-import Component from "../component";
+import Component from "../component/index.js";
 
 /**
  * Cria um componente virtual.

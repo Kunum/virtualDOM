@@ -1,5 +1,5 @@
-import diff from "../diff";
-import renderElement from "../render-element";
+import diff from "../diff/index.js";
+import renderElement from "../render-element/index.js";
 
 /**
  * Representa um componente

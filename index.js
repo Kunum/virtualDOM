@@ -1,5 +1,5 @@
-import Component from "./src/component";
-import createElement from "./src/create-element";
+import Component from "./src/component/index.js";
+import createElement from "./src/create-element/index.js";
 
 const virtualDOM = {
     Component: Component,

@@ -1,4 +1,4 @@
-import Component from "../component";
+import Component from "../component/index.js";
 
 /**
  * Transforma um objeto virtual em elemento HTML.
