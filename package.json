@@ -1,0 +1,34 @@
+{
+  	"name": "@kunum/virtualdom",
+  	"version": "1.0.0",
+  	"description": "Uma biblioteca para renderizar e atualizar componentes",
+  	"main": "index.js",
+  	"scripts": {
+  	  	"test": "echo \"Error: no test specified\" && exit 1",
+  	  	"lint": "eslint .",
+  	  	"docs": "jsdoc2md \"src/**/*.js\" > docs/documentation.md"
+  	},
+  	"repository": {
+  	  	"type": "git",
+  	  	"url": "git+https://github.com/Kunum/virtualDOM.git"
+  	},
+  	"keywords": [
+  	  	"web",
+  	  	"framework",
+  	  	"frontend",
+  	  	"virtual",
+  	  	"dom"
+  	],
+  	"author": "Kunum Software",
+  	"license": "MIT",
+  	"bugs": {
+  	  	"url": "https://github.com/Kunum/virtualDOM/issues"
+  	},
+  	"homepage": "https://github.com/Kunum/virtualDOM#readme",
+  	"devDependencies": {
+  	  	"@eslint/js": "^9.8.0",
+  	  	"eslint": "^9.8.0",
+  	  	"globals": "^15.9.0",
+  	  	"jsdoc-to-markdown": "^8.0.3"
+  	}
+}
