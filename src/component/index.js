@@ -51,7 +51,7 @@ class Component{
 
         const patch = diff(this.subTree, newSubTree);
 
-        this.parent = patch(this.parent);
+        this.parent = patch(this.parent.firstChild);
         this.subTree = newSubTree; 
     }
 
