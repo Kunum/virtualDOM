@@ -10,8 +10,14 @@ import Component from "../component/index.js";
 
 function createElement(type, props, children){
     if (typeof type === "function" && type.prototype instanceof Component){
+
         const component = new type({...props, children: children});
-        return component.render();
+        
+        const componentSubtree = component.render();
+        componentSubtree.component = type;
+        componentSubtree.originalProps = props; 
+
+        return componentSubtree;
     }
 
     return {

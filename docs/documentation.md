@@ -30,6 +30,9 @@
 <dt><a href="#isArray">isArray(obj)</a> ⇒ <code>boolean</code></dt>
 <dd><p>Verifica se um objeto é uma array.</p>
 </dd>
+<dt><a href="#parseClassNameList">parseClassNameList(list)</a> ⇒ <code>string</code></dt>
+<dd><p>Converte uma lista de classes para uma string.</p>
+</dd>
 </dl>
 
 ## Typedefs
@@ -208,6 +211,18 @@ Verifica se um objeto é uma array.
 | Param | Type | Description |
 | --- | --- | --- |
 | obj | <code>any</code> | O objeto a ser testado. |
+
+<a name="parseClassNameList"></a>
+
+## parseClassNameList(list) ⇒ <code>string</code>
+Converte uma lista de classes para uma string.
+
+**Kind**: global function  
+**Returns**: <code>string</code> - Uma string compatível com element.className  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| list | <code>Array.&lt;string&gt;</code> | A lista de classes. |
 
 <a name="ComponenteVirtual"></a>
 
